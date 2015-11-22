@@ -21,4 +21,11 @@ FactoryGirl.define do
     sequence(:email) { |n| "arun#{n}@example.com" }
     password "password"
   end
+
+  factory :person do
+    name "FirstName LastName"
+    email
+    hired_on { Date.current }
+    account
+  end
 end
