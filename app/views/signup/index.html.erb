@@ -1,0 +1,6 @@
+<%= simple_form_for @signup, url: signup_index_path do |form| %>
+  <%= form.input :email %>
+  <%= form.input :password %>
+  <%= form.input :account_name %>
+  <%= form.button :submit, value: 'Sign up' %>
+<% end %>

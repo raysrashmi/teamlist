@@ -7,7 +7,7 @@ feature "Visitor signs up" do
 
     click_link I18n.t("sessions.form.sign_up")
 
-    expect(current_path).to eq sign_up_path
+    expect(current_path).to eq "/signup"
   end
 
   scenario "with valid email and password" do

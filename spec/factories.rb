@@ -16,4 +16,9 @@ FactoryGirl.define do
     user
     account
   end
+
+  factory :signup do
+    sequence(:email) { |n| "arun#{n}@example.com" }
+    password "password"
+  end
 end
