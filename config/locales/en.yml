@@ -17,3 +17,8 @@ en:
 
   titles:
     application: Teamlist
+
+  people:
+    index:
+      column:
+        name: "Name"

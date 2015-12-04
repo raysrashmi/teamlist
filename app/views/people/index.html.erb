@@ -1,0 +1,17 @@
+<table class="index-table">
+  <thead>
+    <tr>
+      <th><%= t(".column.name") %></th>
+    </tr>
+  </thead>
+
+  <% @people.each do |person| %>
+    <tr data-person="<%= person.name %>">
+      <td>
+        <%= link_to person do %>
+          <span data-role="name"><%= person.name %></span>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
