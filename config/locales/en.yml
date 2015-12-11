@@ -22,3 +22,7 @@ en:
     index:
       column:
         name: "Name"
+        mail: "Email"
+        bio: "Biography"
+        joining: "Hiring date"
+

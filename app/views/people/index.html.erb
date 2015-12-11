@@ -1,7 +1,9 @@
 <table class="index-table">
   <thead>
     <tr>
-      <th><%= t(".column.name") %></th>
+      <% t(".column").each do |a| %>
+        <th><%= a.last %></th>
+      <% end %>
     </tr>
   </thead>
 
@@ -12,6 +14,9 @@
           <span data-role="name"><%= person.name %></span>
         <% end %>
       </td>
+      <td><%= person.email %></td>
+      <td><%= person.bio %></td>
+      <td><%= person.hired_on %></td>
     </tr>
   <% end %>
 </table>
