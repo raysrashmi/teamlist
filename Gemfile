@@ -24,6 +24,7 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 gem "virtus"
+gem "haml"
 
 group :development do
   gem "quiet_assets"
