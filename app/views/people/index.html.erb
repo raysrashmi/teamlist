@@ -1,0 +1,22 @@
+<table class="index-table">
+  <thead>
+    <tr>
+      <% t(".column").each do |a| %>
+        <th><%= a.last %></th>
+      <% end %>
+    </tr>
+  </thead>
+
+  <% @people.each do |person| %>
+    <tr data-person="<%= person.name %>">
+      <td>
+        <%= link_to person do %>
+          <span data-role="name"><%= person.name %></span>
+        <% end %>
+      </td>
+      <td><%= person.email %></td>
+      <td><%= person.bio %></td>
+      <td><%= person.hired_on %></td>
+    </tr>
+  <% end %>
+</table>
